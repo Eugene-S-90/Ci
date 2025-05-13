@@ -1,0 +1,47 @@
+.button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.9rem 2rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 500px;
+  overflow: hidden;
+  background: black;
+  color: rgb(255, 237, 213); /* orange-100 */
+  text-decoration: none;
+}
+
+.button span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+}
+
+.button:hover span {
+  color: white;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10%;
+  width: 120%;
+  height: 100%;
+  background: rgb(234, 88, 12); /* orange-600 */
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+  z-index: 0;
+  transform: translateX(-100%);
+}
+
+.button:hover::before {
+  transform: translateX(0);
+} 

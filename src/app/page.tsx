@@ -1,3 +1,5 @@
+import styles from './styles/button.module.css'
+
 export default function Home() {
   return (
     <div className="min-h-[100vh] h-[100%] bg-gradient-to-b from-black to-blue-900 flex flex-col">
@@ -5,15 +7,15 @@ export default function Home() {
       <nav className="py-4">
         <div className="container mx-auto flex flex-col sm:flex-row justify-center items-center gap-14">
           <div className="text-white font-bold text-xl">CI/CD Demo</div>
-          <div className="space-x-4">
-            <a href="#" className="text-white hover:text-blue-300 transition-colors px-3 py-1">
-              Home
+          <div className="flex gap-4 flex-wrap justify-center">
+            <a href="#" className={styles.button}>
+              <span>Home</span>
             </a>
-            <a href="#" className="text-white hover:text-blue-300 transition-colors px-3 py-1">
-              About
+            <a href="#" className={styles.button}>
+              <span>About</span>
             </a>
-            <a href="#" className="text-white hover:text-blue-300 transition-colors px-3 py-1">
-              Contact
+            <a href="#" className={styles.button}>
+              <span>Contact</span>
             </a>
           </div>
         </div>
@@ -23,7 +25,7 @@ export default function Home() {
       <main className="flex-1 flex flex-col justify-center container mx-auto px-4">
         {/* Hero Section */}
         <section className="text-center mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">CI/CD test to Vercel</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4"><span className="text-orange-600">CI/CD</span> test to Vercel</h1>
           <p className="text-lg text-blue-200 max-w-2xl mx-auto mb-8">
             Testing automated deployment pipeline with GitHub Actions
           </p>
@@ -61,30 +63,30 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-2">
             <div className="text-white text-sm">© 2024 CI/CD Demo. All rights reserved.</div>
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center gap-4">
               <a
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-200 hover:text-orange-500 transition-colors"
+                className={styles.button}
               >
-                GitHub
+                <span>GitHub</span>
               </a>
               <a
                 href="https://vercel.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-200 hover:text-orange-500 transition-colors"
+                className={styles.button}
               >
-                Vercel
+                <span>Vercel</span>
               </a>
               <a
                 href="https://nextjs.org"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-200 hover:text-orange-500 transition-colors"
+                className={styles.button}
               >
-                Next.js
+                <span>Next.js</span>
               </a>
             </div>
           </div>
