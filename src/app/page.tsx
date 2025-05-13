@@ -1,7 +1,3 @@
-'use client'
-
-import { useState, useEffect } from 'react'
-
 export default function Home() {
   return (
     <div className="min-h-[100vh] h-[100%] bg-gradient-to-b from-black to-blue-900 flex flex-col">
@@ -10,9 +6,15 @@ export default function Home() {
         <div className="container mx-auto flex flex-col sm:flex-row justify-center items-center gap-14">
           <div className="text-white font-bold text-xl">CI/CD Demo</div>
           <div className="space-x-4">
-            <a href="#" className="text-white hover:text-blue-300 transition-colors   px-3 py-1">Home</a>
-            <a href="#" className="text-white hover:text-blue-300 transition-colors    px-3 py-1">About</a>
-            <a href="#" className="text-white hover:text-blue-300 transition-colors   px-3 py-1">Contact</a>
+            <a href="#" className="text-white hover:text-blue-300 transition-colors px-3 py-1">
+              Home
+            </a>
+            <a href="#" className="text-white hover:text-blue-300 transition-colors px-3 py-1">
+              About
+            </a>
+            <a href="#" className="text-white hover:text-blue-300 transition-colors px-3 py-1">
+              Contact
+            </a>
           </div>
         </div>
       </nav>
@@ -21,9 +23,7 @@ export default function Home() {
       <main className="flex-1 flex flex-col justify-center container mx-auto px-4">
         {/* Hero Section */}
         <section className="text-center mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Hello! It&apos;s CI/CD test to Vercel
-          </h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">CI/CD test to Vercel</h1>
           <p className="text-lg text-blue-200 max-w-2xl mx-auto mb-8">
             Testing automated deployment pipeline with GitHub Actions
           </p>
@@ -60,17 +60,30 @@ export default function Home() {
       <footer className="py-4 border-t border-blue-800">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-2">
-            <div className="text-white text-sm">
-              © 2024 CI/CD Demo. All rights reserved.
-            </div>
+            <div className="text-white text-sm">© 2024 CI/CD Demo. All rights reserved.</div>
             <div className="flex items-center space-x-4">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-orange-500 transition-colors">
+              <a
+                href="https://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-200 hover:text-orange-500 transition-colors"
+              >
                 GitHub
               </a>
-              <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-orange-500 transition-colors">
+              <a
+                href="https://vercel.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-200 hover:text-orange-500 transition-colors"
+              >
                 Vercel
               </a>
-              <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-orange-500 transition-colors">
+              <a
+                href="https://nextjs.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-200 hover:text-orange-500 transition-colors"
+              >
                 Next.js
               </a>
             </div>
