@@ -8,15 +8,12 @@ export default function Home() {
   useEffect(() => {
     // asdsa
     console.log('render')
-
+    setCount(count + 1)
     return () => {
       console.log('return')
     }
-  }, [])
-
-  useEffect(() => {
-    console.log('once')
-  })
+  }, [setCount]);
+  console.log(count)
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
