@@ -25,7 +25,9 @@ export default function Home() {
       <main className="flex-1 flex flex-col justify-center container mx-auto px-4">
         {/* Hero Section */}
         <section className="text-center mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4"><span className="text-orange-600">CI/CD</span> test to Vercel</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <span className="text-orange-600">CI/CD</span> test to Vercel
+          </h1>
           <p className="text-lg text-blue-200 max-w-2xl mx-auto mb-8">
             Testing automated deployment pipeline with GitHub Actions
           </p>
