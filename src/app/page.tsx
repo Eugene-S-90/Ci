@@ -7,7 +7,7 @@ export default function Home() {
 
   useEffect(() => {
     // asdsa
-    console.log('render')
+    console.log('rener')
     setCount(count + 1)
     return () => {
       console.log('return')
