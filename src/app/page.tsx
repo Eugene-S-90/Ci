@@ -1,12 +1,16 @@
 import styles from './styles/button.module.css'
+import { useState } from 'react'
 
 export default function Home() {
+
+  const [count, setCount] = useState(0)
+
   return (
     <div className="min-h-[100vh] h-[100%] bg-gradient-to-b from-black to-blue-900 flex flex-col">
       {/* Navigation */}
       <nav className="py-4">
         <div className="container mx-auto flex flex-col sm:flex-row justify-center items-center gap-14">
-          <div className="text-white font-bold text-xl">CI/CD Demo test</div>
+          <div className="text-white font-bold text-xl">CI/CD Demo</div>
           <div className="flex gap-4 flex-wrap justify-center">
             <a href="#" className={styles.button}>
               <span>Home</span>
